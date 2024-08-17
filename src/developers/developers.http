@@ -1,0 +1,29 @@
+### list developers
+
+GET http://localhost:3000/developers
+
+
+### get developer
+GET http://localhost:3000/developers/dev_g8kLfNfe92XqYsajsMIVv
+
+
+### create developer
+POST  http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "name": "vitor gabriel",
+    "email": "vitor@mail.com",
+    "dateOfBirth": "2004-10-18"
+}
+
+### update developer
+PATCH  http://localhost:3000/developers/1
+Content-Type: application/json
+
+{
+    "email": "vitor@mail.com"
+}
+
+### delete developer
+DELETE  http://localhost:3000/developers/dev_g8kLfNfe92XqYsajsMIVv
